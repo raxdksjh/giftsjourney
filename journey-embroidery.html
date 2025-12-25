@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Journey 2: The Hand-Embroidered Love</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Menggunakan ulang setting dari index.html */
+        :root {
+            --color-bg: #fbfcee;
+            --color-text-dark: #343b1b;
+            --color-accent-blue: #3971b8;
+            --color-accent-yellow: #f6e6a5; /* Kuning Aksen */
+            --color-soft-green: #c8d69b; /* Hijau Soft */
+            --font-serif: 'Lora', serif;
+            --font-sans: 'Poppins', sans-serif;
+        }
+
+        /* Styling Dasar */
+        body {
+            font-family: var(--font-serif);
+            background-color: var(--color-bg);
+            color: var(--color-text-dark);
+            margin: 0;
+            padding: 0;
+            line-height: 1.75;
+        }
+
+        h1, h2, h3, h4, .title {
+            font-family: var(--font-sans);
+            color: var(--color-text-dark);
+            text-transform: uppercase;
+        }
+
+        a {
+            color: var(--color-accent-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--color-text-dark);
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Header/Intro Halaman Detail */
+        .intro-header {
+            text-align: center;
+            padding-bottom: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .intro-header h1 {
+            font-size: 2.2em;
+            color: var(--color-soft-green); /* Header di sini pakai Hijau Soft */
+        }
+
+        /* Garis Pemisah (Separator) */
+        .separator {
+            border-top: 2px solid var(--color-accent-yellow); /* Garis Kuning untuk pemisah */
+            margin: 60px 0;
+        }
+
+        /* --- 2. Step Section (Zigzag Layout) --- */
+        .step-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 20px 0;
+        }
+
+        .step-content, .step-image {
+            flex: 1;
+        }
+        
+        .step-section.reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* Styling Konten Teks */
+        .step-content h3 {
+            color: var(--color-text-dark);
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid var(--color-accent-blue); /* Garis Biru di bawah Judul Step */
+            padding-bottom: 5px;
+        }
+        
+        .step-content p {
+            font-family: var(--font-serif);
+        }
+
+        /* Styling Gambar (Kotak) */
+        .step-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 0;
+            box-shadow: 4px 4px 0px 0px var(--color-soft-green); /* Bayangan Hijau Soft */
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 10px 20px;
+            background-color: var(--color-text-dark);
+            color: white;
+            border-radius: 0;
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .step-section {
+                flex-direction: column; 
+            }
+            .step-section.reverse {
+                flex-direction: column; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <div class="intro-header">
+            <h1>The Hand-Embroidered Love</h1>
+            <p style="font-style: italic;">"Menyulam bukan hanya soal benang, tapi juga menanamkan kesabaran dan cerita di setiap jahitan."</p>
+            <p>Ini adalah dokumentasi lengkap dari proses memilih desain, mentransfer pola, hingga menjahit setiap detail unik pada baju kado.</p>
+        </div>
+
+        <div class="separator"></div>
+        
+        <section class="step-section">
+            <div class="step-content">
+                <h3>Step 1: Ide, Material, dan Pola</h3>
+                <p>Awalnya adalah memilih baju yang tepat (bahan, warna) dan benang yang berkualitas. Kemudian, saya merancang pola (teks atau gambar) yang sesuai dengan kepribadiannya. Pola ini harus ditransfer dengan hati-hati ke kain agar tidak merusak serat.</p>
+                <p>Memilih jenis benang dan warna yang akan menonjol adalah kunci di tahap ini. Warna-warna cerah sangat membantu!</p>
+            </div>
+            <div class="step-image">
+                <img src="pic/design patch.png" alt="Pola dan Bahan Menyulam" title="Slot Foto Step 1: Pola & Bahan">
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="step-section reverse">
+            <div class="step-content">
+                <h3>Step 2: Securing the Fabric (Membingkai)</h3>
+                <p>Menggunakan bingkai sulam (*hoop*) adalah langkah wajib! Kain harus terpasang sangat kencang agar jahitan rapi dan tidak menarik benang terlalu kencang di satu area. Saya menggunakan *hoop* bambu/plastik dan memastikan tidak ada kerutan.</p>
+                <p>Posisi *hoop* harus pas dengan area yang akan disulam. Sedikit kelonggaran bisa membuat hasil sulaman jadi berantakan.</p>
+            </div>
+            <div class="step-image">
+                <img src="placeholder-embroidery-step2.jpg" alt="Kain di Bingkai Sulam" title="Slot Foto Step 2: Pembingkaian">
+            </div>
+        </section>
+
+        <div class="separator"></div>
+
+        <section class="step-section">
+            <div class="step-content">
+                <h3>Step 3: The Stitching Process</h3>
+                <p>Proses sulam dimulai! Saya memilih jenis jahitan yang paling cocok untuk desain (misalnya *Satin Stitch* untuk mengisi area atau *Back Stitch* untuk garis luar). Ini adalah proses yang sangat meditasi dan butuh waktu berjam-jam untuk setiap detail kecil.</p>
+                <p>Setiap jahitan dihitung, dan bagian belakang kain harus tetap rapi agar nyaman saat dipakai. Ini adalah wujud kesabaran sesungguhnya!</p>
+            </div>
+            <div class="step-image">
+                <img src="placeholder-embroidery-step3.jpg" alt="Proses Menjahit Sulaman" title="Slot Foto Step 3: Proses Sulam">
+            </div>
+        </section>
+        
+        <div class="separator"></div>
+        
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2>The Hand-Embroidered Love is Complete!</h2>
+            <p>Dan inilah kado pakaian yang telah disulap menjadi sesuatu yang sangat personal.</p>
+            <div style="width: 100%; height: 400px; background-color: var(--color-soft-green); margin: 20px 0; border-radius: 0; box-shadow: 6px 6px 0px 0px var(--color-accent-blue);">
+                </div>
+            <a href="index.html" class="back-button">&larr; Home</a>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
